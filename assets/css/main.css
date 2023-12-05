@@ -1,0 +1,79 @@
+@keyframes animationfacturation {
+    0% {
+      
+        transform: translateY(1000%);
+    }
+    100% {
+     
+        transform: translateY(-0%);
+
+    }
+}
+@keyframes animationfacturationid {
+  0% {
+    
+      transform: translateY(800%);
+      opacity: 0;
+  }
+  100% {
+   opacity: 1;
+      transform: translateY(50%);
+
+  }
+}
+.titlefacturation{
+    animation:animationfacturation 1000ms forwards;
+}
+.idfacturation{
+  animation:animationfacturationid 1000ms 300ms forwards;
+
+}
+
+@keyframes switch {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes switch-reverserd {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes animationburgerbyHugo {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes animationburgerbyHugoClose {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes popup {
+  0% {
+      transform: scale(0);  
+  }
+  100% {
+      transform: scale(1);        
+  }
+}
+
+
+
+body{
+  overflow-x: hidden;
+}
