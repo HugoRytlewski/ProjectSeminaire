@@ -76,7 +76,7 @@ if (isset($_GET['filter']) && $_GET['filter'] === 'paid') {
 
 // Génération de PDF
 if (isset($_GET['pdf'])){
-    $pdf = new FPDF();
+    $pdf = new FPDF();  x
     // ... Code pour la génération du PDF ...
     $pdf->Output("chemin_du_fichier.pdf", 'F');
 }
@@ -84,11 +84,11 @@ if (isset($_GET['pdf'])){
 ```
 
 ## Conclusion
+ **Résumé des fonctionnalités**:
+ - Ce système de facturation pour congressistes offre une solution complète et efficace pour la gestion des paiements et des services liés aux événements. Les fonctionnalités clés, telles que la création, la modification, l'affichage et le filtrage des factures, ainsi que la génération de PDF, rendent le processus de facturation transparent et facile à gérer pour les administrateurs. L'importance de ce système réside dans sa capacité à rationaliser les opérations financières, à réduire les erreurs et à améliorer l'expérience globale des congressistes et des organisateurs d'événements.
 
-- Résumé des fonctionnalités.
-- Importance du système pour la gestion efficace des factures des congressistes.
 
 ## Annexes
 
 - Captures d'Écran :
-  Images de l'interface utilisateur.
+pensez a mettre les captures d'écran hugo
