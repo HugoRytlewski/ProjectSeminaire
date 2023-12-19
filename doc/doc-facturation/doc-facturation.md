@@ -11,7 +11,7 @@
 7. [Conclusion](#conclusion)
 8. [Annexes](#annexes)
 
-## Introduction
+## Contexte
 
 L'objectif de ce système est la création et la gestion de factures pour des congressistes. Le système permet la création de factures, leur affichage et filtrage, et fournit des détails sur des factures spécifiques.
 
@@ -58,12 +58,24 @@ if (isset($_POST['cr'])) {
    $facture = new facturation(0, $_POST["valeurBooleenne"], $_POST["date"], $_POST["congressiste"], $_POST["montant"]);
    $facture->createFacture();
 }
+```
+**Creation Facture** :
+
+![Texte alternatif](https://i.imgur.com/pPWVVyk.png "creation facture")
+
+
+```php
 
 // Modification d'une facture
 if (isset($_POST['md'])) {
     $facture = new facturation($_POST["id_facture"], $_POST["valeurBooleenne2"], $_POST["date"], $_POST["congressiste"], $_POST["montant"]);
     $facture->ModifierFacture();
 }
+```
+**Choisir Visualisation/Edition Facture** :
+
+![Texte alternatif](https://i.imgur.com/jIYKscI.png "ecran modification facture")
+```php
 
 // Calcul du Total de la Facture
 $Total = $TotActiv + $TotSession + $TotCong + $PrixPetitDej;
@@ -73,6 +85,11 @@ if (isset($_GET['filter']) && $_GET['filter'] === 'paid') {
     $facturepaid = new facturation();
     $AllFacture = $facturepaid->GetAllFacturePaid();
 }
+```
+**Detail de la facture** :
+
+![Texte alternatif](https://i.imgur.com/9PRVDab.png " detail facture")
+```php
 
 // Génération de PDF
 if (isset($_GET['pdf'])){
@@ -82,28 +99,21 @@ if (isset($_GET['pdf'])){
 }
 
 ```
+**Facture PDF** :
 
+![Texte alternatif](https://i.imgur.com/2zoqsLN.png "facture pdf")
 ## Conclusion
  **Résumé des fonctionnalités**:
  - Ce système de facturation pour congressistes offre une solution complète et efficace pour la gestion des paiements et des services liés aux événements. Les fonctionnalités clés, telles que la création, la modification, l'affichage et le filtrage des factures, ainsi que la génération de PDF, rendent le processus de facturation transparent et facile à gérer pour les administrateurs. L'importance de ce système réside dans sa capacité à rationaliser les opérations financières, à réduire les erreurs et à améliorer l'expérience globale des congressistes et des organisateurs d'événements.
 
 
-## Annexes
-
-**Choisir Visualisation/Edition Facture** :
-
-![Texte alternatif](https://i.imgur.com/jIYKscI.png "ecran modification facture")
-
-**Detail de la facture** :
-
-![Texte alternatif](https://i.imgur.com/9PRVDab.png " detail facture")
-
-**Facutre PDF** :
-
-![Texte alternatif](https://i.imgur.com/2zoqsLN.png "facture pdf")
 
 
-**Creation Facture** :
 
-![Texte alternatif](https://i.imgur.com/pPWVVyk.png "creation facture")
+
+
+
+
+
+
 
