@@ -90,5 +90,20 @@ if (isset($_GET['pdf'])){
 
 ## Annexes
 
-- Captures d'Écran :
-pensez a mettre les captures d'écran hugo
+**Choisir Visualisation/Edition Facture** :
+
+![Texte alternatif](https://i.imgur.com/jIYKscI.png "ecran modification facture")
+
+**Detail de la facture** :
+
+![Texte alternatif](https://i.imgur.com/9PRVDab.png " detail facture")
+
+**Facutre PDF** :
+
+![Texte alternatif](https://i.imgur.com/2zoqsLN.png "facture pdf")
+
+
+**Creation Facture** :
+
+![Texte alternatif](https://i.imgur.com/pPWVVyk.png "creation facture")
+
